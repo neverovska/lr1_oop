@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.make_transferController">
+   <children>
+      <Label layoutX="28.0" layoutY="38.0" prefHeight="82.0" prefWidth="273.0" text="ПЕРЕВОД">
+         <font>
+            <Font name="Times New Roman" size="55.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="out_accountComboBox" editable="true" layoutX="25.0" layoutY="206.0" prefHeight="28.0" prefWidth="214.0" />
+      <ComboBox fx:id="in_accountComboBox" editable="true" layoutX="25.0" layoutY="260.0" prefHeight="28.0" prefWidth="214.0" />
+      <Button fx:id="backButton" layoutX="18.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Назад" />
+      <Button fx:id="transferButton" layoutX="25.0" layoutY="336.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="214.0" text="Выполнить перевод" />
+      <TextField fx:id="countText" layoutX="25.0" layoutY="300.0" prefHeight="25.0" prefWidth="214.0" promptText="Сумма перевода" />
+      <Label layoutX="25.0" layoutY="107.0" text="НА СЧЁТ">
+         <font>
+            <Font name="Times New Roman" size="66.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="181.0" text="С какого счета:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="239.0" text="На какой счет:">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
